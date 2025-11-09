@@ -1,18 +1,4 @@
-/*-----------------------------------*\
- * #style.css
-\*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
- * #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
 
@@ -70,9 +56,6 @@
 
 
 
-/*-----------------------------------*\
- * #RESET
-\*-----------------------------------*/
 
 *, *::before, *::after {
   margin: 0;
@@ -127,9 +110,7 @@ body {
 
 
 
-/*-----------------------------------*\
- * #REUSED STYLE
-\*-----------------------------------*/
+
 
 .container { padding-inline: 15px; }
 
@@ -219,9 +200,7 @@ h3 > a { color: inherit; }
 
 
 
-/*-----------------------------------*\
- * #HEADER
-\*-----------------------------------*/
+
 
 .header-search { display: none; }
 
@@ -390,11 +369,14 @@ h3 > a { color: inherit; }
   align-items: center;
 }
 
-.hero .container { width: 100%; }
+.hero .container { 
+  width: 100%;
+  margin-left: 60%;
+}
 
 .hero-subtitle {
   color: var(--eerie-black);
-  font-size: var(--fs-4);
+  font-size: 1.5rem;
   font-weight: var(--fw-600);
   margin-bottom: 20px;
 }
@@ -419,7 +401,8 @@ h3 > a { color: inherit; }
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 60px;
+  
 }
 
 .service-item {
@@ -428,16 +411,20 @@ h3 > a { color: inherit; }
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 20px;
+  gap: 60px;
+  
 }
 
-.service-item-icon { width: 45px; }
+.service-item-icon {
+   width: 45px;
+   height: 40px;
+   }
 
 .service-item-icon img { margin-inline: auto; }
 
 .service-item-title {
   color: var(--eerie-black);
-  font-size: var(--fs-7);
+  font-size: var(--fs-6);
   font-weight: var(--fw-600);
 }
 
@@ -491,9 +478,7 @@ h3 > a { color: inherit; }
 
 
 
-/*-----------------------------------*\
- * #PRODUCT
-\*-----------------------------------*/
+
 
 .filter-list {
   display: flex;
@@ -592,9 +577,6 @@ h3 > a { color: inherit; }
 
 
 
-/*-----------------------------------*\
- * #BLOG
-\*-----------------------------------*/
 
 .blog .section-title { margin-bottom: 40px; }
 
@@ -660,9 +642,7 @@ h3 > a { color: inherit; }
 
 
 
-/*-----------------------------------*\
- * #NEWSLATTER
-\*-----------------------------------*/
+
 
 .newsletter { padding-bottom: 120px; }
 
@@ -711,9 +691,7 @@ h3 > a { color: inherit; }
 
 
 
-/*-----------------------------------*\
- * #FOOTER
-\*-----------------------------------*/
+
 
 .footer-top {
   background: var(--cultured);
@@ -929,9 +907,6 @@ h3 > a { color: inherit; }
 
 
 
-/**
- * responsive for larger than 768px screen
- */
 
 @media (min-width: 768px) {
 
@@ -1010,16 +985,11 @@ h3 > a { color: inherit; }
 
 
 
-/**
- * responsive for larger than 992px screen
- */
+
 
 @media (min-width: 992px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
+ 
   :root {
 
     /**
